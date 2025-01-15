@@ -11,7 +11,7 @@ It's been build to be remixed, so read on to learn how to build and edit your ow
 ## Quick Start
 
 ```sh
-   yarn  # Install dependencies
+yarn  # Install dependencies
 ```
 ```sh
 yarn start  # Start a local dev server
