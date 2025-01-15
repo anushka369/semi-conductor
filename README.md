@@ -8,7 +8,7 @@ It uses [Posenet](https://github.com/tensorflow/tfjs-models/tree/master/posenet)
 
 It's been build to be remixed, so read on to learn how to build and edit your own version of Semi-Conductor, with custom music and instruments.
 
-## Quick Start
+## Quick Start 📁
 
 ```sh
 yarn  # Install dependencies
@@ -33,13 +33,13 @@ Semi-Conductor is built in vanilla JS without a framework. Each JS file in the `
 
 ## How to remix this 🛠️
 
-#### Adding instrument samples
+#### 1. Adding instrument samples
 
 We haven't included the original audio samples used in the live [Semi-Conductor experiment](https://semiconductor.withgoogle.com), but you can use an open sound library like [Sonatina Symphonic Orchestra](https://github.com/peastman/sso) (just make sure you have the rights to use samples you choose in accordance to their licence agreement), or even record your own.
 
 Add your samples to `/static/samples`, and then add to `/src/assets/samples.json` the relative paths from the `/static/samples` directory to each sample. Samples are organised first by instrument name, then by note. Note descriptions are of the format `C4` for middle C, or `D#5` for the D sharp the octave above middle C. You don't need to have all the notes for a given instrument, Tone.js will interpolate between the samples you have provided.
 
-#### Changing instrumentation
+#### 2. Changing instrumentation
 
 Semi-Conductor is designed to work with a string quartet, however you can change the instrumentation as you desire. Create a rock band, percussion ensemble or synth orchestra if you want! If you're low on disk space, you could even replicate John Cage's [4'33"](https://youtu.be/Oh-o3udImy8?t=57).
 
@@ -47,7 +47,7 @@ Follow the steps above with whichever instruments & samples you want to add. The
 
 You will also need to have a `song.json` file (see below) that only contains instrument names that correspond the ones in `samples.json`. You may need to remove or edit the `orchestra.js` module, as it will break if it doesn't recognise the instrument names.
 
-#### Changing the MIDI song
+#### 3. Changing the MIDI song
 
 The current MIDI song is a custom arrangement of Mozart's *Eine Kleine Nachtmusik* made by us. But you can swap this out with any MIDI file, you just need to convert it to JSON and make sure you have samples listed in `samples.json` with the same instrument names as the tracks.
 
