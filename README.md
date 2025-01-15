@@ -1,4 +1,4 @@
-# Semi-Conductor 🎻
+# Virtual Orchestra 🎻
 
 ![An animation of Semi-Conductor in action.](semi-conductor.gif)
 
@@ -11,7 +11,7 @@ It's been build to be remixed, so read on to learn how to build and edit your ow
 ## Quick Start
 
 ```sh
-yarn  # Install dependencies
+   yarn  # Install dependencies
 ```
 ```sh
 yarn start  # Start a local dev server
@@ -20,7 +20,7 @@ yarn start  # Start a local dev server
 yarn build  # Build static site into the /dist folder
 ```
 
-## Code Structure
+## Code Structure 👾
 
 Semi-Conductor is built in vanilla JS without a framework. Each JS file in the `/scripts` folder contains a class module, with each class controlling one portion of the app (also there are some helper files with useful functions). It's designed so that modules can be used or deleted according to how you want to remix the app.
 
@@ -31,7 +31,7 @@ Semi-Conductor is built in vanilla JS without a framework. Each JS file in the `
 - `posenet-renderer.js` renders the pose skeleton in the interface
 - `audio-player.js` handles the MIDI playback & loading of samples using Tone.js
 
-## How to remix this
+## How to remix this 🛠️
 
 #### Adding instrument samples
 
@@ -53,11 +53,11 @@ The current MIDI song is a custom arrangement of Mozart's *Eine Kleine Nachtmusi
 
 To build a `song.json` file, create or acquire a MIDI file you want to use. Then, head to [this Tone.js website](http://tonejs.github.io/Midi/) to convert the MIDI into a JSON file that Tone.js can read. Go through the JSON file and edit the instrument names to correspond to the instrument names in `samples.json` and then move this file to `/src/assets/song.json`.
 
-## Contributors
+## Contributors 👩🏻‍💻
 
 Built by [Rupert Parry](https://www.rparry.me/), [Melissa Lu](https://melissaludesigns.com/), Samantha Cordingley, [Haylie Craig](https://www.hayliecraig.com/), and the team at Google Creative Lab, Sydney.
 
-## License & Notes
+## License & Notes ©
 
 Semi-Conductor has been made available under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) (see LICENSE file in this repository for details).
 
